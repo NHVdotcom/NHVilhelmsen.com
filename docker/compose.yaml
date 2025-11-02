@@ -1,0 +1,12 @@
+services:
+  nginx:
+    image: nginx:latest
+    container_name: nhvilhelmsen.com
+    ports:
+      - "85:80"
+    volumes:
+      - ../web:/usr/share/nginx/html
+      - ../nginx.conf:/etc/nginx/nginx.conf
+    restart: always
+    environment:
+      - NGINX_HOST=nhvilhelmsen.coms

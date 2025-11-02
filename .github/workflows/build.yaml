@@ -1,0 +1,39 @@
+name: CI/CD
+on:
+  push:
+    branches:
+      - '**'
+    paths-ignore:
+      - '**.md'
+      - '.github/workflows/**'
+  workflow_dispatch:
+
+jobs:
+  CI:
+    runs-on: docker-test
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: test service
+        run: |
+          cd docker
+          docker compose up -d
+
+          if docker logs nhvilhelmsen.com | grep error; then
+            echo "Error found in logs"
+            docker logs nhvilhelmsen.com | grep error
+            exit 1
+          fi
+
+  CD:
+    needs: CI
+    runs-on: docker
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: start service
+        run: |
+          cd docker
+          docker compose up -d
