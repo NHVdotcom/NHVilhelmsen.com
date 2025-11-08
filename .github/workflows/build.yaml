@@ -8,25 +8,27 @@ on:
       - '.github/workflows/**'
 
 jobs:
-  # CI:
-  #   runs-on: docker-test
-  #   steps:
-  #     - name: Checkout code
-  #       uses: actions/checkout@v4
+  CI:
+    runs-on: docker-test
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-  #     - name: test service
-  #       run: |
-  #         cd docker
-  #         docker compose up -d
+      - name: test service
+        run: |
+          cd docker
+          docker compose up -d
 
-  #         if docker logs nhvilhelmsen.com | grep error; then
-  #           echo "Error found in logs"
-  #           docker logs nhvilhelmsen.com | grep error
-  #           exit 1
-  #         fi
+          sleep 15
+
+          if docker logs nhvilhelmsen.com | grep -i "error"; then
+            echo "Error found in logs"
+            docker logs nhvilhelmsen.com | grep "error"
+            exit 1
+          fi
 
   CD:
-    # needs: CI
+    needs: CI
     runs-on: docker
     steps:
       - name: Checkout code
