@@ -3,793 +3,294 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NHVilhelmsen.com</title>
+  <title>NHVilhelmsen</title>
   <link rel="icon" type="image/x-icon" href="NHV.ico">
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
 </head>
 <body>
-  <!-- Header -->
-  <header class="header">
-    <div class="container header-container">
-      <div class="logo" style="display: flex; align-items: center; justify-content: center; width: 100%;">
-        <img src="NHV.ico" alt="NHV icon" width="24" height="24" class="icon">
-        <span>NHVilhelmsen.com</span>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="site-branding">
+        <a href="#" class="site-title">
+          <img src="NHV.ico" alt="" width="20" height="20">
+          NHVilhelmsen.com
+        </a>
       </div>
-      <button class="mobile-menu-toggle" aria-label="Toggle menu">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="3" y1="12" x2="21" y2="12"></line>
-          <line x1="3" y1="6" x2="21" y2="6"></line>
-          <line x1="3" y1="18" x2="21" y2="18"></line>
-        </svg>
-      </button>
+      <nav class="site-nav">
+        <a href="#about">About</a>
+        <a href="#gear">Gear</a>
+        <a href="#services">Services</a>
+        <a href="#experience">Experience</a>
+      </nav>
     </div>
   </header>
 
-  <div class="mobile-menu">
-    <a href="#gear" class="mobile-menu-item">
-      <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-small">
-        <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-        <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-        <line x1="6" y1="6" x2="6.01" y2="6"></line>
-        <line x1="6" y1="18" x2="6.01" y2="18"></line>
-      </svg> -->
-      Gear
-    </a>
-    <a href="#Qualifications" class="mobile-menu-item">
-      <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-small">
-        <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
-        <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
-        <path d="M4 22h16"></path>
-        <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
-        <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
-        <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
-      </svg> -->
-      Qualifications
-    </a>
-    <a href="#services" class="mobile-menu-item">
-      <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-small">
-        <circle cx="12" cy="12" r="10"></circle>
-        <line x1="2" y1="12" x2="22" y2="12"></line>
-        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-      </svg> -->
-      Services
-    </a>
-    <a href="#gallery" class="mobile-menu-item">
-      <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-small">
-        <circle cx="12" cy="12" r="10"></circle>
-        <line x1="2" y1="12" x2="22" y2="12"></line>
-        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-      </svg> -->
-      Gallery
-    </a>
-  </div>
+  <main class="container page-content">
+    
+    <section id="about" class="content-section">
+      <h1>Infrastructure & Experimentation</h1>
+      <p class="intro-text">
+        I'm a Danish student studying Data & Communication with a specialty in Infrastructure. 
+        This is my homelab setup where I experiment with different technologies. I currently work as a DevOps intern.
+      </p>
+      <div class="links-row">
+        <a href="https://github.com/NHVilhelmsenP">GitHub</a>
+        <a href="https://discordapp.com/users/302788787392741376">Discord</a>
+        <a href="#gallery">View Setup Gallery &darr;</a>
+      </div>
+    </section>
 
-  <!-- Hero Section -->
-  <section id="overview" class="section hero-section">
+    <section id="gear" class="content-section">
+      <h2>Server Rack & Hardware</h2>
+      <p>The hardware that powers my homelab environment.</p>
+      
+      <div class="table-responsive">
+        <table class="gear-table">
+          <thead>
+            <tr>
+              <th>Device</th>
+              <th>CPU (& GPU)</th>
+              <th>RAM</th>
+              <th>Storage</th>
+              <th>OS/Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Main PC</strong></td>
+              <td>i7-12700KF, 7900 XTX</td>
+              <td>32GB DDR4</td>
+              <td>4TB SSD</td>
+              <td>Windows 11</td>
+            </tr>
+            <tr>
+              <td><strong>Bigboy</strong></td>
+              <td>i5-12600K</td>
+              <td>96GB DDR4</td>
+              <td>19.5TB Mixed</td>
+              <td>Proxmox v9.*</td>
+            </tr>
+            <tr>
+              <td><strong>Mini</strong></td>
+              <td>i5-7500T</td>
+              <td>32GB DDR4</td>
+              <td>256GB SSD</td>
+              <td>Proxmox v9.*</td>
+            </tr>
+            <tr>
+              <td><strong>Mini2</strong></td>
+              <td>i7-8700T</td>
+              <td>32GB DDR4</td>
+              <td>2TB</td>
+              <td>Proxmox v9.*</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p><small><a href="https://dk.pcpartpicker.com/list/3cfm74" target="_blank">View full parts list on PCPartPicker</a></small></p>
+    </section>
+
+    <section id="services" class="full-width-scroller">
+      <div class="container">
+        <h2>Services Running</h2>
+        <p>Software and services self-hosted in the lab.</p>
+        <div class="links-row">
+          <a href="#" id="toggle-list">A list instead &darr;</a>
+        </div>
+      </div>
+      
+      <div class="scroll-container" id="scroll-view">
+        <div class="scroll-track track-left">
+          <div class="badge"><strong>Monitoring Stack:</strong> Grafana, Prometheus, Loki, Promtail. Full metrics for LXC/VMs.</div>
+          <div class="badge"><strong>Cloudflare Tunnel:</strong> Exposes services securely without port forwarding; acts as dDNS.</div>
+          <div class="badge"><strong>Home Assistant:</strong> Automation for lights, thermostats, and sensors, and controlling my Rack.</div>
+          <div class="badge"><strong>Docker:</strong> A few different docker VMs for CI/CD and general deployment of smaller services.</div>
+          <div class="badge"><strong>AMP:</strong> Paid for professional license for AMP and using it for every game server.</div>
+          <div class="badge"><strong>Servarr (media stack):</strong> LXC host running the media management services.</div>
+          <!-- Duplicate for seamless loop -->
+          <div class="badge" aria-hidden="true"><strong>Monitoring Stack:</strong> Grafana, Prometheus, Loki, Promtail. Full metrics for LXC/VMs.</div>
+          <div class="badge" aria-hidden="true"><strong>Cloudflare Tunnel:</strong> Exposes services securely without port forwarding; acts as dDNS.</div>
+          <div class="badge" aria-hidden="true"><strong>Home Assistant:</strong> Automation for lights, thermostats, and sensors, and controlling my Rack.</div>
+          <div class="badge" aria-hidden="true"><strong>Docker:</strong> A few different docker VMs for CI/CD and general deployment of smaller services.</div>
+          <div class="badge" aria-hidden="true"><strong>AMP:</strong> Paid for professional license for AMP and using it for every game server.</div>
+          <div class="badge" aria-hidden="true"><strong>Servarr (media stack):</strong> LXC host running the media management services.</div>
+        </div>
+
+        <div class="scroll-track track-right">
+          <div class="badge"><strong>Grafana:</strong> Metrics & dashboards for the lab.</div>
+          <div class="badge"><strong>WireGuard:</strong> VPN endpoints for myself.</div>
+          <div class="badge"><strong>WireGuard-DMZ:</strong> VPN endpoints for my friends, seperated by network.</div>
+          <div class="badge"><strong>Immich:</strong> Self-hosted photo server (large storage LXC).</div>
+          <div class="badge"><strong>UniFi Controller:</strong> Network controller for UniFi gear.</div>
+          <div class="badge"><strong>Pi-hole (DMZ):</strong> DNS ad-blocking for isolated guest network.</div>
+          <div class="badge"><strong>Prometheus & exporter:</strong> Metrics collection (Prometheus + pve exporter).</div>
+          <div class="badge"><strong>Sonarr:</strong> TV automation service.</div>
+          <!-- Duplicate for seamless loop -->
+          <div class="badge" aria-hidden="true"><strong>Grafana:</strong> Metrics & dashboards for the lab.</div>
+          <div class="badge"><strong>WireGuard:</strong> VPN endpoints for myself.</div>
+          <div class="badge"><strong>WireGuard-DMZ:</strong> VPN endpoints for my friends, seperated by network.</div>
+          <div class="badge" aria-hidden="true"><strong>Immich:</strong> Self-hosted photo server (large storage LXC).</div>
+          <div class="badge" aria-hidden="true"><strong>UniFi Controller:</strong> Network controller for UniFi gear.</div>
+          <div class="badge" aria-hidden="true"><strong>Pi-hole (DMZ):</strong> DNS ad-blocking for isolated guest network.</div>
+          <div class="badge" aria-hidden="true"><strong>Prometheus & exporter:</strong> Metrics collection (Prometheus + pve exporter).</div>
+          <div class="badge" aria-hidden="true"><strong>Sonarr:</strong> TV automation service.</div>
+        </div>
+
+        <div class="scroll-track track-left">
+          <div class="badge"><strong>Heimdall:</strong> Application dashboard / launchpad.</div>
+          <div class="badge"><strong>Warracker:</strong> Warranty tracker which is OSS.</div>
+          <div class="badge"><strong>Factorio:</strong> Game server LXC.</div>
+          <div class="badge"><strong>TrueNAS:</strong> Storage/Simple NAS use.</div>
+          <div class="badge"><strong>Portainer:</strong> Docker management UI.</div>
+          <div class="badge"><strong>Docker hosts:</strong> Dedicated Docker VMs (Docker-Mini, Docker-Mini2).</div>
+          <!-- Duplicate for seamless loop -->
+          <div class="badge" aria-hidden="true"><strong>Heimdall:</strong> Application dashboard / launchpad.</div>
+          <div class="badge" aria-hidden="true"><strong>Warracker:</strong> Warranty tracker which is OSS.</div>
+          <div class="badge" aria-hidden="true"><strong>Factorio:</strong> Game server LXC.</div>
+          <div class="badge" aria-hidden="true"><strong>TrueNAS:</strong> Storage/Simple NAS use.</div>
+          <div class="badge" aria-hidden="true"><strong>Portainer:</strong> Docker management UI.</div>
+          <div class="badge" aria-hidden="true"><strong>Docker hosts:</strong> Dedicated Docker VMs (Docker-Mini, Docker-Mini2).</div>
+        </div>
+
+        <div class="scroll-track track-right">
+          <div class="badge"><strong>Proxmox HA nodes:</strong> High-availability Proxmox VMs (Prox-HA-1/2/3), I use to test HA and run exams on.</div>
+          <div class="badge"><strong>CML labs:</strong> CML-1 and CML-PUBLIC lab VMs.</div>
+          <div class="badge"><strong>OPNsense:</strong> Firewall/router VM.</div>
+          <div class="badge"><strong>PBS:</strong> Dedicated Proxmox Backup Server for friends.</div>
+          <div class="badge"><strong>Utility VMs:</strong> Various Ubuntu servers and SSH bastions.</div>
+          <!-- Duplicate for seamless loop -->
+          <div class="badge" aria-hidden="true"><strong>Proxmox HA nodes:</strong> High-availability Proxmox VMs (Prox-HA-1/2/3), I use to test HA and run exams on.</div>
+          <div class="badge" aria-hidden="true"><strong>CML labs:</strong> CML-1 and CML-PUBLIC lab VMs.</div>
+          <div class="badge" aria-hidden="true"><strong>OPNsense:</strong> Firewall/router VM.</div>
+          <div class="badge" aria-hidden="true"><strong>PBS:</strong> Dedicated Proxmox Backup Server for friends.</div>
+          <div class="badge" aria-hidden="true"><strong>Utility VMs:</strong> Various Ubuntu servers and SSH bastions.</div>
+        </div>
+      </div>
+
+      <div class="services-list" id="list-view" style="display: none;">
+        <div class="container">
+          <ul class="bullet-list">
+            <li><strong>Monitoring Stack:</strong> Grafana, Prometheus, Loki, Promtail. Full metrics for LXC/VMs.</li>
+            <li><strong>Cloudflare Tunnel:</strong> Exposes services securely without port forwarding; acts as dDNS.</li>
+            <li><strong>Home Assistant:</strong> Automation for lights, thermostats, and sensors, and controlling my Rack.</li>
+            <li><strong>Docker:</strong> A few different docker VMs for CI/CD and general deployment of smaller services.</li>
+            <li><strong>AMP:</strong> Paid for professional license for AMP and using it for every game server.</li>
+            <li><strong>Servarr (media stack):</strong> LXC host running the media management services.</li>
+            <li><strong>Grafana:</strong> Metrics & dashboards for the lab.</li>
+            <li><strong>WireGuard:</strong> VPN endpoints (multiple LXC instances).</li>
+            <li><strong>WireGuard-DMZ:</strong> VPN endpoints for my friends, seperated by network.</li>
+            <li><strong>Immich:</strong> Self-hosted photo server (large storage LXC).</li>
+            <li><strong>UniFi Controller:</strong> Network controller for UniFi gear.</li>
+            <li><strong>Pi-hole:</strong> DNS ad-blocking.</li>
+            <li><strong>Sonarr:</strong> TV automation service.</li>
+            <li><strong>Heimdall:</strong> Application dashboard / launchpad.</li>
+            <li><strong>Warracker:</strong> Warranty tracker which is OSS.</li>
+            <li><strong>Factorio:</strong> Game server LXC.</li>
+            <li><strong>TrueNAS:</strong> Storage/Simple NAS use.</li>
+            <li><strong>Portainer:</strong> Docker management UI.</li>
+            <li><strong>Docker hosts:</strong> Dedicated Docker VMs (Docker-Mini, Docker-Mini2).</li>
+            <li><strong>Proxmox HA nodes:</strong> High-availability Proxmox VMs (Prox-HA-1/2/3), I use to test HA and run exams on.</li>
+            <li><strong>CML labs:</strong> CML-1 and CML-PUBLIC lab VMs.</li>
+            <li><strong>OPNsense:</strong> Firewall/router VM.</li>
+            <li><strong>PBS:</strong> Dedicated Proxmox Backup Server for friends.</li>
+            <li><strong>Utility VMs:</strong> Various Ubuntu servers and SSH bastions.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="content-section">
+      <h2>Experience & Qualifications</h2>
+      
+      <div class="two-col-grid">
+        <div>
+          <h3>Certifications</h3>
+          <ul class="bullet-list">
+            <li>CCNA: Enterprise Networking, Security, and Automation</li>
+            <li>CCNA: Switching, Routing, and Wireless Essentials</li>
+            <li>CCNP Enterprise</li>
+            <li>CCNP Security</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Tech Stack</h3>
+          <ul class="bullet-list">
+            <li><strong>Languages:</strong> Golang (Favorite), C#, PowerShell, SQL</li>
+            <li><strong>Cloud:</strong> Azure (VMs, Arc, DevOps Pipelines)</li>
+            <li><strong>Virtualization:</strong> Proxmox VE, Hyper-V, Docker, Kubernetes</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="content-section">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <figure>
+          <img src="./images/setup1.jpg" alt="Setup view 1">
+          <figcaption>Sofa Setup</figcaption>
+        </figure>
+        <figure>
+          <img src="./images/flowers.jpg" alt="Setup view 1">
+          <figcaption>Lego Flowers are nice</figcaption>
+        </figure>
+        <figure>
+          <img src="./images/Rack.jpg" alt="Rack view">
+          <figcaption>Server Rack</figcaption>
+        </figure>
+        <figure>
+          <img src="./images/setup3.jpg" alt="Setup view 3">
+          <figcaption>Desk Setup</figcaption>
+        </figure>
+        <figure>
+          <img src="./images/setup4.jpg" alt="Setup view 3">
+          <figcaption>My small collection</figcaption>
+        </figure>
+        <figure>
+          <img src="./images/plush.jpg" alt="Setup view 3">
+          <figcaption>One Piece Plush because I'm a nerd</figcaption>
+        </figure>
+        <figure>
+          <img src="./images/KBM.jpg" alt="Setup view 3">
+          <figcaption>I have a favorite color</figcaption>
+        </figure>
+        <figure>
+          <img src="./images/setup2.jpg" alt="Setup view 3">
+          <figcaption>N/A</figcaption>
+        </figure>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
     <div class="container">
-      <div class="hero">
-        <div class="hero-content">
-          <div class="hero-badge">Welcome to My Homelab</div>
-          <h1 class="hero-title">Infrastructure & Experimentation</h1>
-          <p class="hero-description">
-            I'm a Danish student studying Data & Communication with specialty in Infrastructure. 
-            This is my homelab setup where I experiment with different technologies and services. And use way too much time setting it up. Just to barely use it.
-            I currently work as a DevOps intern at [undisclosed company].
-          </p>
-          <div class="button-group">
-            <a href="#gear" class="button primary">
-              <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-small">
-                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                <line x1="6" y1="18" x2="6.01" y2="18"></line>
-              </svg> -->
-              Gear
-            </a>
-            <a href="#Qualifications" class="button primary">
-              <!-- <svg xmlns="http://www.w3.org/2000/svg"  width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-small">
-                <path d="M4 5V19C4 19.5523 4.44772 20 5 20H19" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M18 9L13 13.9999L10.5 11.4998L7 14.9998" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg> -->
-              Experience
-            </a>
-            <a href="#services" class="button primary">
-              <!-- <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-small">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0002 8C9.79111 8 8.00024 9.79086 8.00024 12C8.00024 14.2091 9.79111 16 12.0002 16C14.2094 16 16.0002 14.2091 16.0002 12C16.0002 9.79086 14.2094 8 12.0002 8ZM10.0002 12C10.0002 10.8954 10.8957 10 12.0002 10C13.1048 10 14.0002 10.8954 14.0002 12C14.0002 13.1046 13.1048 14 12.0002 14C10.8957 14 10.0002 13.1046 10.0002 12Z" fill="#000"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.2867 0.5C9.88583 0.5 8.6461 1.46745 8.37171 2.85605L8.29264 3.25622C8.10489 4.20638 7.06195 4.83059 6.04511 4.48813L5.64825 4.35447C4.32246 3.90796 2.83873 4.42968 2.11836 5.63933L1.40492 6.83735C0.67773 8.05846 0.954349 9.60487 2.03927 10.5142L2.35714 10.7806C3.12939 11.4279 3.12939 12.5721 2.35714 13.2194L2.03927 13.4858C0.954349 14.3951 0.67773 15.9415 1.40492 17.1626L2.11833 18.3606C2.83872 19.5703 4.3225 20.092 5.64831 19.6455L6.04506 19.5118C7.06191 19.1693 8.1049 19.7935 8.29264 20.7437L8.37172 21.1439C8.6461 22.5325 9.88584 23.5 11.2867 23.5H12.7136C14.1146 23.5 15.3543 22.5325 15.6287 21.1438L15.7077 20.7438C15.8954 19.7936 16.9384 19.1693 17.9553 19.5118L18.3521 19.6455C19.6779 20.092 21.1617 19.5703 21.8821 18.3606L22.5955 17.1627C23.3227 15.9416 23.046 14.3951 21.9611 13.4858L21.6432 13.2194C20.8709 12.5722 20.8709 11.4278 21.6432 10.7806L21.9611 10.5142C23.046 9.60489 23.3227 8.05845 22.5955 6.83732L21.8821 5.63932C21.1617 4.42968 19.678 3.90795 18.3522 4.35444L17.9552 4.48814C16.9384 4.83059 15.8954 4.20634 15.7077 3.25617L15.6287 2.85616C15.3543 1.46751 14.1146 0.5 12.7136 0.5H11.2867ZM10.3338 3.24375C10.4149 2.83334 10.7983 2.5 11.2867 2.5H12.7136C13.2021 2.5 13.5855 2.83336 13.6666 3.24378L13.7456 3.64379C14.1791 5.83811 16.4909 7.09167 18.5935 6.38353L18.9905 6.24984C19.4495 6.09527 19.9394 6.28595 20.1637 6.66264L20.8771 7.86064C21.0946 8.22587 21.0208 8.69271 20.6764 8.98135L20.3586 9.24773C18.6325 10.6943 18.6325 13.3057 20.3586 14.7523L20.6764 15.0186C21.0208 15.3073 21.0946 15.7741 20.8771 16.1394L20.1637 17.3373C19.9394 17.714 19.4495 17.9047 18.9905 17.7501L18.5936 17.6164C16.4909 16.9082 14.1791 18.1618 13.7456 20.3562L13.6666 20.7562C13.5855 21.1666 13.2021 21.5 12.7136 21.5H11.2867C10.7983 21.5 10.4149 21.1667 10.3338 20.7562L10.2547 20.356C9.82113 18.1617 7.50931 16.9082 5.40665 17.6165L5.0099 17.7501C4.55092 17.9047 4.06104 17.714 3.83671 17.3373L3.1233 16.1393C2.9058 15.7741 2.97959 15.3073 3.32398 15.0186L3.64185 14.7522C5.36782 13.3056 5.36781 10.6944 3.64185 9.24779L3.32398 8.98137C2.97959 8.69273 2.9058 8.2259 3.1233 7.86067L3.83674 6.66266C4.06106 6.28596 4.55093 6.09528 5.0099 6.24986L5.40676 6.38352C7.50938 7.09166 9.82112 5.83819 10.2547 3.64392L10.3338 3.24375Z" fill="#000"/>
-              </svg> -->
-              Services
-            </a>
-            <a href="#gallery" class="button primary">
-              <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-small">
-                <path d="M4 3.5C4 3.22386 4.22386 3 4.5 3H19.5C19.7761 3 20 3.22386 20 3.5V20.5C20 20.7761 19.7761 21 19.5 21H4.5C4.22386 21 4 20.7761 4 20.5V3.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M8 7H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M8 17H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M11 11H13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M11 13H13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg> -->
-              Gallery
-            </a>
-          </div>
-        </div>
-        <div class="hero-image">
-          <div class="image-container">
-            <img src="images/Rack.jpg" alt="Homelab Rack" class="img-responsive">
-            <div class="image-glow"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="hero-background">
-      <div class="hero-gradient"></div>
-      <div class="hero-grid"></div>
-    </div>
-  </section>
-
-  <!-- Gear Section -->
-  <section id="gear" class="section section-border">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-badge">Hardware</div>
-        <h2 class="section-title">My Gear</h2>
-        <p class="section-description">The hardware that powers my homelab environment</p>
-      </div>
-      
-      <div class="card-grid">
-        <div class="card">
-          <div class="card-header">
-            <div class="card-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
-                <rect x="9" y="9" width="6" height="6"></rect>
-                <line x1="9" y1="2" x2="9" y2="4"></line>
-                <line x1="15" y1="2" x2="15" y2="4"></line>
-                <line x1="9" y1="20" x2="9" y2="22"></line>
-                <line x1="15" y1="20" x2="15" y2="22"></line>
-                <line x1="20" y1="9" x2="22" y2="9"></line>
-                <line x1="20" y1="14" x2="22" y2="14"></line>
-                <line x1="2" y1="9" x2="4" y2="9"></line>
-                <line x1="2" y1="14" x2="4" y2="14"></line>
-              </svg>
-            </div>
-            <h3 class="card-title">PC</h3>
-            <p class="card-subtitle">Gaming n' nerd shit</p>
-          </div>
-          <div class="card-body">
-            <div class="card-badge">Running Windows 11 24H2</div>
-            <div class="spec-list">
-              <div class="spec-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-small">
-                  <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
-                  <rect x="9" y="9" width="6" height="6"></rect>
-                  <line x1="9" y1="2" x2="9" y2="4"></line>
-                  <line x1="15" y1="2" x2="15" y2="4"></line>
-                  <line x1="9" y1="20" x2="9" y2="22"></line>
-                  <line x1="15" y1="20" x2="15" y2="22"></line>
-                  <line x1="20" y1="9" x2="22" y2="9"></line>
-                  <line x1="20" y1="14" x2="22" y2="14"></line>
-                  <line x1="2" y1="9" x2="4" y2="9"></line>
-                  <line x1="2" y1="14" x2="4" y2="14"></line>
-                </svg>
-                <span>Intel Core i7-12700KF</span>
-              </div>
-              <div class="spec-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-small">
-                  <rect x="2" y="6" width="18" height="12" rx="2" ry="2"></rect>
-                  <circle cx="7" cy="12" r="2"></circle>
-                  <circle cx="15" cy="12" r="2"></circle>
-                  <line x1="20" y1="9" x2="23" y2="9"></line>
-                  <line x1="20" y1="15" x2="23" y2="15"></line>
-                  <line x1="2" y1="9" x2="4" y2="9"></line>
-                  <line x1="2" y1="15" x2="4" y2="15"></line>
-                </svg>
-                <span>AMD Radeon 7900 XTX</span>
-              </div>
-              <div class="spec-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-small">
-                  <path d="M22 12H2"></path>
-                  <path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>
-                  <line x1="6" y1="16" x2="6.01" y2="16"></line>
-                  <line x1="10" y1="16" x2="10.01" y2="16"></line>
-                </svg>
-                <span>32GB 3600 MT/s DDR4</span>
-              </div>
-              <div class="spec-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-small">
-                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
-                </svg>
-                <span>4TB SSD</span>
-              </div>
-            </div>
-          </div>
-          <div class="card-footer">
-            <a href="https://dk.pcpartpicker.com/list/3cfm74" class="button outline" target="_blank">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-small">
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="2" y1="12" x2="22" y2="12"></line>
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-              </svg>
-              View on PCPARTPICKER
-            </a>
-          </div>
-        </div>
-        
-        <div class="card">
-          <div class="card-header">
-            <div class="card-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                <line x1="6" y1="18" x2="6.01" y2="18"></line>
-              </svg>
-            </div>
-            <h3 class="card-title">Bigboy</h3>
-            <p class="card-subtitle">The main beefy server</p>
-          </div>
-          <div class="card-body">
-            <div class="card-badge">Running Proxmox v9.*</div>
-            <div class="spec-list">
-              <div class="spec-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-small">
-                  <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
-                  <rect x="9" y="9" width="6" height="6"></rect>
-                  <line x1="9" y1="2" x2="9" y2="4"></line>
-                  <line x1="15" y1="2" x2="15" y2="4"></line>
-                  <line x1="9" y1="20" x2="9" y2="22"></line>
-                  <line x1="15" y1="20" x2="15" y2="22"></line>
-                  <line x1="20" y1="9" x2="22" y2="9"></line>
-                  <line x1="20" y1="14" x2="22" y2="14"></line>
-                  <line x1="2" y1="9" x2="4" y2="9"></line>
-                  <line x1="2" y1="14" x2="4" y2="14"></line>
-                </svg>
-                <span>Intel Core i5-12600K</span>
-              </div>
-              <div class="spec-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-small">
-                  <path d="M22 12H2"></path>
-                  <path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>
-                  <line x1="6" y1="16" x2="6.01" y2="16"></line>
-                  <line x1="10" y1="16" x2="10.01" y2="16"></line>
-                </svg>
-                <span>96GB 2133 MT/s DDR4</span>
-              </div>
-              <div class="spec-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-small">
-                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
-                </svg>
-                <span>19,5TB HDD+SSD</span>
-              </div>
-            </div>
-          </div>
-          <div class="card-footer">
-            <a href="https://dk.pcpartpicker.com/list/HMWtMC" class="button outline" target="_blank">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-small">
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="2" y1="12" x2="22" y2="12"></line>
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-              </svg>
-              View on PCPARTPICKER
-            </a>
-          </div>
-        </div>
-        
-        <div class="card">
-          <div class="card-header">
-            <div class="card-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                <line x1="6" y1="18" x2="6.01" y2="18"></line>
-              </svg>
-            </div>
-            <h3 class="card-title">Mini</h3>
-            <p class="card-subtitle">HP Elitedesk Mini</p>
-          </div>
-          <div class="card-body">
-            <div class="card-badge">Running Proxmox v9.*</div>
-            <div class="spec-list">
-              <div class="spec-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-small">
-                  <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
-                  <rect x="9" y="9" width="6" height="6"></rect>
-                  <line x1="9" y1="2" x2="9" y2="4"></line>
-                  <line x1="15" y1="2" x2="15" y2="4"></line>
-                  <line x1="9" y1="20" x2="9" y2="22"></line>
-                  <line x1="15" y1="20" x2="15" y2="22"></line>
-                  <line x1="20" y1="9" x2="22" y2="9"></line>
-                  <line x1="20" y1="14" x2="22" y2="14"></line>
-                  <line x1="2" y1="9" x2="4" y2="9"></line>
-                  <line x1="2" y1="14" x2="4" y2="14"></line>
-                </svg>
-                <span>Intel Core i5-7500T</span>
-              </div>
-              <div class="spec-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-small">
-                  <path d="M22 12H2"></path>
-                  <path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>
-                  <line x1="6" y1="16" x2="6.01" y2="16"></line>
-                  <line x1="10" y1="16" x2="10.01" y2="16"></line>
-                </svg>
-                <span>32GB 2133MT/s DDR4</span>
-              </div>
-              <div class="spec-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-small">
-                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
-                </svg>
-                <span>256GB SATA SSD</span>
-              </div>
-            </div>
-          </div>
-          <div class="card-footer">
-            <p class="card-note"></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-    <section id="gallery" class="section section-alt">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-badge">Gallery</div>
-        <h2 class="section-title">Pictures of stuff & stuff.</h2>
-        <p class="section-description">I don't know, I just put stuff here.</p>
-      </div>
-      
-      <div class="network-diagram">
-        <div class="diagram-container">
-          <div class="diagram-glow"></div>
-        </div>
-      </div>
-      
-      <div class="card-grid">
-        <div class="card">
-          <div class="card-header">
-            <h3 class="card-subtitle">Setup picture 1/4</h3>
-            <h3 class="card-badge">07-09-2025</h3>
-          </div>
-            <div class="card-body">
-              <div class="image-container">
-                <img src="./images/setup1.jpg" class="img-responsive">
-              </div>
-            </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header">
-            <h3 class="card-subtitle">Setup picture 2/4</h3>
-            <h3 class="card-badge">07-09-2025</h3>
-          </div>
-            <div class="card-body">
-              <div class="image-container">
-                <img src="./images/setup2.jpg" class="img-responsive">
-              </div>
-            </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header">
-            <h3 class="card-subtitle">Setup picture 3/4</h3>
-            <h3 class="card-badge">07-09-2025</h3>
-          </div>
-          <div class="card-body">
-            <div class="image-container">
-              <img src="./images/setup3.jpg" class="img-responsive">
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header">
-            <h3 class="card-subtitle">Setup picture 4/4</h3>
-            <h3 class="card-badge">07-09-2025</h3>
-          </div>
-          <div class="card-body">
-            <div class="image-container">
-              <img src="./images/setup5.jpg" class="img-responsive">
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header">
-            <h3 class="card-subtitle">Vinyls</h3>
-            <h3 class="card-badge">07-09-2025</h3>
-          </div>
-          <div class="card-body">
-            <div class="image-container">
-              <img src="images/setup4.jpg" class="img-responsive">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="Qualifications" class="section section-alt">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-badge">Experience</div>
-        <h2 class="section-title">Current Certificates & Work</h2>
-        <p class="section-description">Hopefully more to come...</p>
-      </div>
-      
-      <div class="network-diagram">
-        <div class="diagram-container">
-          <div class="diagram-glow"></div>
-        </div>
-      </div>
-      
-      <div class="card-grid">
-        <div class="card">
-          <div class="card-header">
-            <div class="card-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
-                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
-                <path d="M4 22h16"></path>
-                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
-                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
-                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
-              </svg>
-            </div>
-            <h3 class="card-title">CCNA: Enterprise Networking, Security and Automation</h3>
-          </div>
-            <div class="card-body">
-            <div class="image-container">
-              <img src="images/CCNA1.png" alt="CCNA: Enterprise Networking, Security, and Automation" class="img-responsive">
-            </div>
-            </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header">
-            <div class="card-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
-                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
-                <path d="M4 22h16"></path>
-                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
-                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
-                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
-              </svg>
-            </div>
-            <h3 class="card-title">CCNA: Switching, Routing, and Wireless Essentials</h3>
-          </div>
-            <div class="card-body">
-            <div class="image-container">
-              <img src="images/CCNA2.png" alt="CCNA: Switching, Routing, and Wireless Essentials" class="img-responsive">
-            </div>
-            </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header">
-            <div class="card-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
-                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
-                <path d="M4 22h16"></path>
-                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
-                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
-                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
-              </svg>
-            </div>
-            <h3 class="card-title">CCNP</h3>
-          </div>
-            <div class="card-body">
-            <div class="image-container">
-              <img src="empty" alt="W.I.P." class="img-responsive">
-            </div>
-            </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header">
-            <div class="card-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
-                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
-                <path d="M4 22h16"></path>
-                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
-                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
-                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
-              </svg>
-            </div>
-            <h3 class="card-title">CCIE</h3>
-          </div>
-            <div class="card-body">
-            <div class="image-container">
-              <img src="empty" alt="W.I.P." class="img-responsive">
-            </div>
-            </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header">
-            <div class="card-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
-                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
-                <path d="M4 22h16"></path>
-                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
-                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
-                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
-              </svg>
-            </div>
-            <h3 class="card-title">Github</h3>
-          </div>
-          <div class="card-body">
-            <div class="image-container">
-              <ul class="list">
-              <li>CI/CD</li>
-              <li>Actions</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header">
-            <div class="card-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
-                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
-                <path d="M4 22h16"></path>
-                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
-                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
-                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
-              </svg>
-            </div>
-            <h3 class="card-title">Various Azure Services</h3>
-          </div>
-            <div class="card-body">
-              <div class="image-container">
-                <ul class="list">
-                <li>Azure Virtual Machines</li>
-                <li>Azure A.I.</li>
-                <li>Azure Arc</li>
-                <li>Azure DevOps Pipelines</li>
-                </ul>
-              </div>
-            </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header">
-            <div class="card-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
-                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
-                <path d="M4 22h16"></path>
-                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
-                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
-                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
-              </svg>
-            </div>
-            <h3 class="card-title">Various Programming languages</h3>
-          </div>
-            <div class="card-body">
-              <div class="image-container">
-                <ul class="list">
-                <li>Golang - By far the favorite</li>
-                <li>C#</li>
-                <li>Powershell</li>
-                <li>SQL</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header">
-            <div class="card-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
-                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
-                <path d="M4 22h16"></path>
-                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
-                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
-                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
-              </svg>
-            </div>
-            <h3 class="card-title">Virtualization</h3>
-          </div>
-            <div class="card-body">
-              <div class="image-container">
-                <ul class="list">
-                <li>Proxmox VE & Clustering</li>
-                <li>Hyper-V</li>
-                <li>Docker</li>
-                <li>Docker-compose</li>
-                <li>Kubernetes - Learning</li>
-                <li>Docker Swarm - Learning</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header">
-            <div class="card-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
-                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
-                <path d="M4 22h16"></path>
-                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
-                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
-                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
-              </svg>
-            </div>
-            <h3 class="card-title">Full Monitoring stack</h3>
-          </div>
-            <div class="card-body">
-              <div class="image-container">
-                <ul class="list">
-                <li>Grafana</li>
-                <li>Prometheus</li>
-                <li>Loki & Promtail</li>
-                <li>Custom Promethues metric exporters using Go</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="section section-border">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-badge">Software</div>
-        <h2 class="section-title">Services Running</h2>
-        <p class="section-description">Software and Services I'm self-hosting</p>
-      </div>
-      
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"></circle>
-              <line x1="2" y1="12" x2="22" y2="12"></line>
-              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-            </svg>
-          </div>
-          <h3 class="service-title">Monitoring</h3>
-          <p class="service-description">Using Proxmox intergrated influxdb function. I get full overview of individual VM and LXC statistics. To display this I'm using Grafana.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-            </svg>
-          </div>
-          <h3 class="service-title">Cloudflare Tunnel</h3>
-          <p class="service-description">Using cloudflare tunnels to manage and expose varying websites and services. It helps privacy and is great as a dDNS if I ever stop paying for a static IP.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"></circle>
-              <line x1="2" y1="12" x2="22" y2="12"></line>
-              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-            </svg>
-          </div>
-          <h3 class="service-title">Home Assistant</h3>
-          <p class="service-description">Smart home automation platform controlling lights, thermostats, and more.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-              <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-              <line x1="6" y1="6" x2="6.01" y2="6"></line>
-              <line x1="6" y1="18" x2="6.01" y2="18"></line>
-            </svg>
-          </div>
-          <h3 class="service-title">DMZ services</h3>
-          <p class="service-description">Free access for my friends to use my proxmox server. I've set proper 2FA and "IGDLA" setup. So they have their own enviroment free from mine.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"></circle>
-              <line x1="2" y1="12" x2="22" y2="12"></line>
-              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-            </svg>
-          </div>
-          <h3 class="service-title">iCUE VM</h3>
-          <p class="service-description">Windows 11 VM running iCUE to control my h150i elite in my server. Zero internet access and just has to run Corsairs awful software.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"></circle>
-              <line x1="2" y1="12" x2="22" y2="12"></line>
-              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-            </svg>
-          </div>
-          <h3 class="service-title">Docker & Docker-test</h3>
-          <p class="service-description">Most of my personal services run on a dedicated docker vm, alongside a docker-test VM for CI/CD.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-container">
-      <div class="footer-logo">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-small">
-          <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-          <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-          <line x1="6" y1="6" x2="6.01" y2="6"></line>
-          <line x1="6" y1="18" x2="6.01" y2="18"></line>
-        </svg>
-        <p>ඞ <script>document.write(new Date().getFullYear())</script>  NHVilhelmsen.com</p>
-      </div>
-      <div class="footer-links">
-        <a href="https://discordapp.com/users/302788787392741376" class="footer-link">Discord</a>
-        <a href="https://github.com/NHVilhelmsenP" class="footer-link">Github Profile</a>
-        <a href="https://github.com/NHVdotcom" class="footer-link">Github Org.</a>
-      </div>
+      <p>
+        &copy; <script>document.write(new Date().getFullYear())</script> NHVilhelmsen
+      </p>
     </div>
   </footer>
-
-  <script>
-    // Mobile menu toggle
-    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-    const mobileMenu = document.querySelector('.mobile-menu');
-    
-    mobileMenuToggle.addEventListener('click', () => {
-      mobileMenu.classList.toggle('active');
-    });
-
-    // Close mobile menu when clicking on a link
-    const mobileMenuItems = document.querySelectorAll('.mobile-menu-item');
-    mobileMenuItems.forEach(item => {
-      item.addEventListener('click', () => {
-        mobileMenu.classList.remove('active');
-      });
-    });
-
-    // Add scroll animation for sections
-    const sections = document.querySelectorAll('section');
-    
-    const observerOptions = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.1
-    };
-    
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
+    <script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
+    <script src="metadata.js"></script>
+    <script>
+      document.getElementById('toggle-list').addEventListener('click', function(e) {
+        e.preventDefault();
+        const scrollView = document.getElementById('scroll-view');
+        const listView = document.getElementById('list-view');
+        const toggleBtn = document.getElementById('toggle-list');
+        
+        if (listView.style.display === 'none') {
+          scrollView.style.display = 'none';
+          listView.style.display = 'block';
+          toggleBtn.textContent = 'Scroll view instead ↑';
+        } else {
+          scrollView.style.display = 'block';
+          listView.style.display = 'none';
+          toggleBtn.textContent = 'A list instead ↓';
         }
       });
-    }, observerOptions);
-    
-    sections.forEach(section => {
-      observer.observe(section);
-    });
-  </script>
-</body>
+    </script>
+  </body>
 </html>
