@@ -263,21 +263,6 @@ p { margin-bottom: 1.25rem; color: var(--text-muted); }
   margin: 0 auto;
 }
 
-.scroll-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  width: 100%;
-  padding: 0 2rem;
-}
-
-
-.scroll-track {
-  display: flex;
-  gap: 1.5rem;
-  width: max-content;
-}
-
 .track-left { animation: scroll-left 120s linear infinite; }
 .track-right { animation: scroll-right 120s linear infinite; }
 

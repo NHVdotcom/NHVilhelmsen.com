@@ -51,7 +51,7 @@
           <thead>
             <tr>
               <th>Device</th>
-              <th>CPU (& GPU)</th>
+              <th>CPU</th>
               <th>RAM</th>
               <th>Storage</th>
               <th>OS/Notes</th>
@@ -60,31 +60,24 @@
           <tbody>
             <tr>
               <td><strong>Main PC</strong></td>
-              <td>i7-12700KF, 7900 XTX</td>
+              <td>i7-12700KF</td>
               <td>32GB DDR4</td>
               <td>4TB SSD</td>
-              <td>Windows 11</td>
+              <td>Win 11, Radeon 7900 XTX</td>
             </tr>
             <tr>
-              <td><strong>Bigboy</strong></td>
+              <td><strong>Bigboy Server</strong></td>
               <td>i5-12600K</td>
               <td>96GB DDR4</td>
               <td>19.5TB Mixed</td>
-              <td>Proxmox v9.*</td>
+              <td>Proxmox v9</td>
             </tr>
             <tr>
-              <td><strong>Mini</strong></td>
+              <td><strong>Mini Node</strong></td>
               <td>i5-7500T</td>
               <td>32GB DDR4</td>
               <td>256GB SSD</td>
-              <td>Proxmox v9.*</td>
-            </tr>
-            <tr>
-              <td><strong>Mini2</strong></td>
-              <td>i7-8700T</td>
-              <td>32GB DDR4</td>
-              <td>2TB</td>
-              <td>Proxmox v9.*</td>
+              <td>HP Elitedesk Mini</td>
             </tr>
           </tbody>
         </table>
@@ -92,113 +85,38 @@
       <p><small><a href="https://dk.pcpartpicker.com/list/3cfm74" target="_blank">View full parts list on PCPartPicker</a></small></p>
     </section>
 
-    <section id="services" class="full-width-scroller">
-      <div class="container">
-        <h2>Services Running</h2>
-        <p>Software and services self-hosted in the lab.</p>
-        <div class="links-row">
-          <a href="#" id="toggle-list">A list instead &darr;</a>
-        </div>
-      </div>
+    <section id="services" class="content-section">
+      <h2>Services Running</h2>
+      <p>Software and services self-hosted in the lab.</p>
       
-      <div class="scroll-container" id="scroll-view">
-        <div class="scroll-track track-left">
-          <div class="badge"><strong>Monitoring Stack:</strong> Grafana, Prometheus, Loki, Promtail. Full metrics for LXC/VMs.</div>
-          <div class="badge"><strong>Cloudflare Tunnel:</strong> Exposes services securely without port forwarding; acts as dDNS.</div>
-          <div class="badge"><strong>Home Assistant:</strong> Automation for lights, thermostats, and sensors, and controlling my Rack.</div>
-          <div class="badge"><strong>Docker:</strong> A few different docker VMs for CI/CD and general deployment of smaller services.</div>
-          <div class="badge"><strong>AMP:</strong> Paid for professional license for AMP and using it for every game server.</div>
-          <div class="badge"><strong>Servarr (media stack):</strong> LXC host running the media management services.</div>
-          <!-- Duplicate for seamless loop -->
-          <div class="badge" aria-hidden="true"><strong>Monitoring Stack:</strong> Grafana, Prometheus, Loki, Promtail. Full metrics for LXC/VMs.</div>
-          <div class="badge" aria-hidden="true"><strong>Cloudflare Tunnel:</strong> Exposes services securely without port forwarding; acts as dDNS.</div>
-          <div class="badge" aria-hidden="true"><strong>Home Assistant:</strong> Automation for lights, thermostats, and sensors, and controlling my Rack.</div>
-          <div class="badge" aria-hidden="true"><strong>Docker:</strong> A few different docker VMs for CI/CD and general deployment of smaller services.</div>
-          <div class="badge" aria-hidden="true"><strong>AMP:</strong> Paid for professional license for AMP and using it for every game server.</div>
-          <div class="badge" aria-hidden="true"><strong>Servarr (media stack):</strong> LXC host running the media management services.</div>
-        </div>
-
-        <div class="scroll-track track-right">
-          <div class="badge"><strong>Grafana:</strong> Metrics & dashboards for the lab.</div>
-          <div class="badge"><strong>WireGuard:</strong> VPN endpoints for myself.</div>
-          <div class="badge"><strong>WireGuard-DMZ:</strong> VPN endpoints for my friends, seperated by network.</div>
-          <div class="badge"><strong>Immich:</strong> Self-hosted photo server (large storage LXC).</div>
-          <div class="badge"><strong>UniFi Controller:</strong> Network controller for UniFi gear.</div>
-          <div class="badge"><strong>Pi-hole (DMZ):</strong> DNS ad-blocking for isolated guest network.</div>
-          <div class="badge"><strong>Prometheus & exporter:</strong> Metrics collection (Prometheus + pve exporter).</div>
-          <div class="badge"><strong>Sonarr:</strong> TV automation service.</div>
-          <!-- Duplicate for seamless loop -->
-          <div class="badge" aria-hidden="true"><strong>Grafana:</strong> Metrics & dashboards for the lab.</div>
-          <div class="badge"><strong>WireGuard:</strong> VPN endpoints for myself.</div>
-          <div class="badge"><strong>WireGuard-DMZ:</strong> VPN endpoints for my friends, seperated by network.</div>
-          <div class="badge" aria-hidden="true"><strong>Immich:</strong> Self-hosted photo server (large storage LXC).</div>
-          <div class="badge" aria-hidden="true"><strong>UniFi Controller:</strong> Network controller for UniFi gear.</div>
-          <div class="badge" aria-hidden="true"><strong>Pi-hole (DMZ):</strong> DNS ad-blocking for isolated guest network.</div>
-          <div class="badge" aria-hidden="true"><strong>Prometheus & exporter:</strong> Metrics collection (Prometheus + pve exporter).</div>
-          <div class="badge" aria-hidden="true"><strong>Sonarr:</strong> TV automation service.</div>
-        </div>
-
-        <div class="scroll-track track-left">
-          <div class="badge"><strong>Heimdall:</strong> Application dashboard / launchpad.</div>
-          <div class="badge"><strong>Warracker:</strong> Warranty tracker which is OSS.</div>
-          <div class="badge"><strong>Factorio:</strong> Game server LXC.</div>
-          <div class="badge"><strong>TrueNAS:</strong> Storage/Simple NAS use.</div>
-          <div class="badge"><strong>Portainer:</strong> Docker management UI.</div>
-          <div class="badge"><strong>Docker hosts:</strong> Dedicated Docker VMs (Docker-Mini, Docker-Mini2).</div>
-          <!-- Duplicate for seamless loop -->
-          <div class="badge" aria-hidden="true"><strong>Heimdall:</strong> Application dashboard / launchpad.</div>
-          <div class="badge" aria-hidden="true"><strong>Warracker:</strong> Warranty tracker which is OSS.</div>
-          <div class="badge" aria-hidden="true"><strong>Factorio:</strong> Game server LXC.</div>
-          <div class="badge" aria-hidden="true"><strong>TrueNAS:</strong> Storage/Simple NAS use.</div>
-          <div class="badge" aria-hidden="true"><strong>Portainer:</strong> Docker management UI.</div>
-          <div class="badge" aria-hidden="true"><strong>Docker hosts:</strong> Dedicated Docker VMs (Docker-Mini, Docker-Mini2).</div>
-        </div>
-
-        <div class="scroll-track track-right">
-          <div class="badge"><strong>Proxmox HA nodes:</strong> High-availability Proxmox VMs (Prox-HA-1/2/3), I use to test HA and run exams on.</div>
-          <div class="badge"><strong>CML labs:</strong> CML-1 and CML-PUBLIC lab VMs.</div>
-          <div class="badge"><strong>OPNsense:</strong> Firewall/router VM.</div>
-          <div class="badge"><strong>PBS:</strong> Dedicated Proxmox Backup Server for friends.</div>
-          <div class="badge"><strong>Utility VMs:</strong> Various Ubuntu servers and SSH bastions.</div>
-          <!-- Duplicate for seamless loop -->
-          <div class="badge" aria-hidden="true"><strong>Proxmox HA nodes:</strong> High-availability Proxmox VMs (Prox-HA-1/2/3), I use to test HA and run exams on.</div>
-          <div class="badge" aria-hidden="true"><strong>CML labs:</strong> CML-1 and CML-PUBLIC lab VMs.</div>
-          <div class="badge" aria-hidden="true"><strong>OPNsense:</strong> Firewall/router VM.</div>
-          <div class="badge" aria-hidden="true"><strong>PBS:</strong> Dedicated Proxmox Backup Server for friends.</div>
-          <div class="badge" aria-hidden="true"><strong>Utility VMs:</strong> Various Ubuntu servers and SSH bastions.</div>
-        </div>
-      </div>
-
-      <div class="services-list" id="list-view" style="display: none;">
-        <div class="container">
-          <ul class="bullet-list">
-            <li><strong>Monitoring Stack:</strong> Grafana, Prometheus, Loki, Promtail. Full metrics for LXC/VMs.</li>
-            <li><strong>Cloudflare Tunnel:</strong> Exposes services securely without port forwarding; acts as dDNS.</li>
-            <li><strong>Home Assistant:</strong> Automation for lights, thermostats, and sensors, and controlling my Rack.</li>
-            <li><strong>Docker:</strong> A few different docker VMs for CI/CD and general deployment of smaller services.</li>
-            <li><strong>AMP:</strong> Paid for professional license for AMP and using it for every game server.</li>
-            <li><strong>Servarr (media stack):</strong> LXC host running the media management services.</li>
-            <li><strong>Grafana:</strong> Metrics & dashboards for the lab.</li>
-            <li><strong>WireGuard:</strong> VPN endpoints (multiple LXC instances).</li>
-            <li><strong>WireGuard-DMZ:</strong> VPN endpoints for my friends, seperated by network.</li>
-            <li><strong>Immich:</strong> Self-hosted photo server (large storage LXC).</li>
-            <li><strong>UniFi Controller:</strong> Network controller for UniFi gear.</li>
-            <li><strong>Pi-hole:</strong> DNS ad-blocking.</li>
-            <li><strong>Sonarr:</strong> TV automation service.</li>
-            <li><strong>Heimdall:</strong> Application dashboard / launchpad.</li>
-            <li><strong>Warracker:</strong> Warranty tracker which is OSS.</li>
-            <li><strong>Factorio:</strong> Game server LXC.</li>
-            <li><strong>TrueNAS:</strong> Storage/Simple NAS use.</li>
-            <li><strong>Portainer:</strong> Docker management UI.</li>
-            <li><strong>Docker hosts:</strong> Dedicated Docker VMs (Docker-Mini, Docker-Mini2).</li>
-            <li><strong>Proxmox HA nodes:</strong> High-availability Proxmox VMs (Prox-HA-1/2/3), I use to test HA and run exams on.</li>
-            <li><strong>CML labs:</strong> CML-1 and CML-PUBLIC lab VMs.</li>
-            <li><strong>OPNsense:</strong> Firewall/router VM.</li>
-            <li><strong>PBS:</strong> Dedicated Proxmox Backup Server for friends.</li>
-            <li><strong>Utility VMs:</strong> Various Ubuntu servers and SSH bastions.</li>
-          </ul>
-        </div>
-      </div>
+      <!-- Updated to use bullet-list class for consistent styling with pink accents -->
+      <ul class="bullet-list services-list">
+        <li><strong>Monitoring Stack:</strong> Grafana, Prometheus, Loki, Promtail. Full metrics for LXC/VMs.</li>
+        <li><strong>Cloudflare Tunnel:</strong> Exposes services securely without port forwarding; acts as dDNS.</li>
+        <li><strong>Home Assistant:</strong> Automation for lights, thermostats, and sensors, and controlling my Rack.</li>
+        <li><strong>Docker:</strong> A few different docker VMs for CI/CD and general deployment of smaller services.</li>
+        <li><strong>AMP:</strong> Paid for professional license for AMP and using it for every game server.</li>
+        <li><strong>Servarr (media stack):</strong> LXC host running the media management services.</li>
+        <li><strong>Grafana:</strong> Metrics & dashboards for the lab.</li>
+        <li><strong>WireGuard:</strong> VPN endpoints for myself.</li>
+        <li><strong>WireGuard-DMZ:</strong> VPN endpoints for my friends, separated by network.</li>
+        <li><strong>Immich:</strong> Self-hosted photo server (large storage LXC).</li>
+        <li><strong>UniFi Controller:</strong> Network controller for UniFi gear.</li>
+        <li><strong>Pi-hole (DMZ):</strong> DNS ad-blocking for isolated guest network.</li>
+        <li><strong>Prometheus & exporter:</strong> Metrics collection (Prometheus + pve exporter).</li>
+        <li><strong>Sonarr:</strong> TV automation service.</li>
+        <li><strong>Heimdall:</strong> Application dashboard / launchpad.</li>
+        <li><strong>Warracker:</strong> Warranty tracker which is OSS.</li>
+        <li><strong>Factorio:</strong> Game server LXC.</li>
+        <li><strong>TrueNAS:</strong> Storage/Simple NAS use.</li>
+        <li><strong>Portainer:</strong> Docker management UI.</li>
+        <li><strong>Docker hosts:</strong> Dedicated Docker VMs (Docker-Mini, Docker-Mini2).</li>
+        <li><strong>Proxmox HA nodes:</strong> High-availability Proxmox VMs (Prox-HA-1/2/3), I use to test HA and run exams on.</li>
+        <li><strong>CML labs:</strong> CML-1 and CML-PUBLIC lab VMs.</li>
+        <li><strong>OPNsense:</strong> Firewall/router VM.</li>
+        <li><strong>PBS:</strong> Dedicated Proxmox Backup Server for friends.</li>
+        <li><strong>Utility VMs:</strong> Various Ubuntu servers and SSH bastions.</li>
+      </ul>
     </section>
 
     <section id="experience" class="content-section">
@@ -274,23 +192,5 @@
   </footer>
     <script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
     <script src="metadata.js"></script>
-    <script>
-      document.getElementById('toggle-list').addEventListener('click', function(e) {
-        e.preventDefault();
-        const scrollView = document.getElementById('scroll-view');
-        const listView = document.getElementById('list-view');
-        const toggleBtn = document.getElementById('toggle-list');
-        
-        if (listView.style.display === 'none') {
-          scrollView.style.display = 'none';
-          listView.style.display = 'block';
-          toggleBtn.textContent = 'Scroll view instead ↑';
-        } else {
-          scrollView.style.display = 'block';
-          listView.style.display = 'none';
-          toggleBtn.textContent = 'A list instead ↓';
-        }
-      });
-    </script>
   </body>
 </html>
