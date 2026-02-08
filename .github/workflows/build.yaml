@@ -10,31 +10,8 @@ on:
 
 
 jobs:
-  # CI:
-  #   runs-on: docker-test
-  #   steps:
-  #     - name: Checkout code
-  #       uses: actions/checkout@v4
-
-  #     - name: test service
-  #       run: |
-  #         cd docker
-  #         docker compose up -d
-
-  #         echo "Sleeping for 15 seconds"
-  #         sleep 15
-
-  #         if docker logs nhvilhelmsen.com | grep -i "error"; then
-  #           echo "Error found in logs"
-  #           docker logs nhvilhelmsen.com | grep "error"
-  #           exit 1
-  #         else
-  #           echo "No errors found in logs"
-  #         fi
-
   CD:
-    # needs: CI
-    runs-on: docker
+    runs-on: nhvilhelmsen
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
