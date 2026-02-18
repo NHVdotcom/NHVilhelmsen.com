@@ -94,35 +94,26 @@
 
     <section id="services" class="content-section">
       <h2>Services Running</h2>
-      <p>Software and services self-hosted in the lab.</p>
+      <p>Software and services self-hosted across my Proxmox cluster (Mini, Bobby, and BigBoy).</p>
       
-      <!-- Updated to use bullet-list class for consistent styling with pink accents -->
       <ul class="bullet-list services-list">
-        <li><strong>Monitoring Stack:</strong> Grafana, Prometheus, Loki, Promtail. Full metrics for LXC/VMs.</li>
-        <li><strong>Cloudflare Tunnel:</strong> Exposes services securely without port forwarding; acts as dDNS.</li>
-        <li><strong>Home Assistant:</strong> Automation for lights, thermostats, and sensors, and controlling my Rack.</li>
-        <li><strong>Docker:</strong> A few different docker VMs for CI/CD and general deployment of smaller services.</li>
-        <li><strong>AMP:</strong> Paid for professional license for AMP and using it for every game server.</li>
-        <li><strong>Servarr (media stack):</strong> LXC host running the media management services.</li>
-        <li><strong>Grafana:</strong> Metrics & dashboards for the lab.</li>
-        <li><strong>WireGuard:</strong> VPN endpoints for myself.</li>
-        <li><strong>WireGuard-DMZ:</strong> VPN endpoints for my friends, separated by network.</li>
-        <li><strong>Immich:</strong> Self-hosted photo server (large storage LXC).</li>
-        <li><strong>UniFi Controller:</strong> Network controller for UniFi gear.</li>
-        <li><strong>Pi-hole (DMZ):</strong> DNS ad-blocking for isolated guest network.</li>
-        <li><strong>Prometheus & exporter:</strong> Metrics collection (Prometheus + pve exporter).</li>
-        <li><strong>Sonarr:</strong> TV automation service.</li>
-        <li><strong>Heimdall:</strong> Application dashboard / launchpad.</li>
-        <li><strong>Warracker:</strong> Warranty tracker which is OSS.</li>
-        <li><strong>Factorio:</strong> Game server LXC.</li>
-        <li><strong>TrueNAS:</strong> Storage/Simple NAS use.</li>
-        <li><strong>Portainer:</strong> Docker management UI.</li>
-        <li><strong>Docker hosts:</strong> Dedicated Docker VMs (Docker-Mini, Docker-Mini2).</li>
-        <li><strong>Proxmox HA nodes:</strong> High-availability Proxmox VMs (Prox-HA-1/2/3), I use to test HA and run exams on.</li>
-        <li><strong>CML labs:</strong> CML-1 and CML-PUBLIC lab VMs.</li>
-        <li><strong>OPNsense:</strong> Firewall/router VM.</li>
-        <li><strong>PBS:</strong> Dedicated Proxmox Backup Server for friends.</li>
-        <li><strong>Utility VMs:</strong> Various Ubuntu servers and SSH bastions.</li>
+        <li><strong>OPNsense:</strong> Core firewall and routing for the lab environment.</li>
+        <li><strong>NPM:</strong> External access via Nginx Proxy Manager (Internal & DMZ instances).</li>
+        <li><strong>Connectivity:</strong> WireGuard for secure remote and Headscale setup for mesh networking to friends.</li>
+        <li><strong>AdGuard Home:</strong> Network-wide DNS blocking with high-availability sync (Primary, Secondary, and Backup nodes).</li>
+        
+        <li><strong>Monitoring Stack:</strong> Prometheus, Grafana, and PVE Exporter for real-time cluster metrics and dashboards.</li>
+        <li><strong>Uptime Kuma:</strong> Self-hosted monitoring for service availability and heartbeat tracking.</li>
+        <li><strong>Management:</strong> Home Assistant for rack automation and UniFi Controller for network gear.</li>
+        
+        <li><strong>TrueNAS:</strong> Dedicated storage management for the lab network.</li>
+        <li><strong>Proxmox Backup Server (PBS):</strong> Multiple instances for internal backups and a dedicated 1TB node for friends.</li>
+        <li><strong>Immich:</strong> Self-hosted photo and video management solution, really just a self hosted google photos.</li>
+
+        <li><strong>AMP (CubeCoders):</strong> Game server management utilizing a Control node and 2x DMZ workers. Along with remote worker nodes at different sites.</li>
+        <li><strong>Warracker:</strong> Open-source warranty tracking for lab hardware.</li>
+        <li><strong>StoatChat:</strong> Self-hosted communication service running in the DMZ.</li>
+        <li><strong>Personal Site:</strong> This website (nhvilhelmsen.com) is hosted locally within the cluster.</li>
       </ul>
     </section>
 
@@ -131,7 +122,7 @@
       
       <div class="two-col-grid">
         <div>
-          <h3>Certifications</h3>
+          <h3>Been studying...</h3>
           <ul class="bullet-list">
             <li>CCNA: Enterprise Networking, Security, and Automation</li>
             <li>CCNA: Switching, Routing, and Wireless Essentials</li>
@@ -140,11 +131,11 @@
           </ul>
         </div>
         <div>
-          <h3>Tech Stack</h3>
+          <h3>What I work with...</h3>
           <ul class="bullet-list">
-            <li><strong>Languages:</strong> Golang (Favorite), C#, PowerShell, SQL</li>
-            <li><strong>Cloud:</strong> Azure (VMs, Arc, DevOps Pipelines)</li>
-            <li><strong>Virtualization:</strong> Proxmox VE, Hyper-V, Docker, Kubernetes</li>
+            <li><strong>Languages:</strong> Golang, C#, PowerShell, SQL</li>
+            <li><strong>Cloud:</strong> Lots of Azure management</li>
+            <li><strong>Virtualization:</strong> Proxmox VE, Hyper-V, Docker, K3S and a bit of K8S</li>
           </ul>
         </div>
       </div>
