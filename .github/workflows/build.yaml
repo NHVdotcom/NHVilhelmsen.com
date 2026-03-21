@@ -3,21 +3,16 @@ on:
   push:
     branches:
       - '**'
-    paths-ignore:
-      - '**.md'
-      - '.github/workflows/**'
   workflow_dispatch:
-
 
 jobs:
   CD:
-    runs-on: nhvilhelmsen
+    runs-on: dmz-bobby
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: start service
         run: |
           cd docker
-          docker compose down
           docker compose up -d
