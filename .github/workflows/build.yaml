@@ -5,14 +5,61 @@ on:
       - '**'
   workflow_dispatch:
 
+env:
+  REGISTRY: registry.nhvilhelmsen.com
+  IMAGE_NAME: nhvilhelmsen-com/website
+
 jobs:
-  CD:
+  publish-image:
     runs-on: dmz-bobby
+    permissions:
+      contents: read
     steps:
       - name: Checkout code
         uses: actions/checkout@v6
 
-      - name: start service
+      - name: Calculate image tags
+        id: image_vars
+        shell: bash
         run: |
-          cd docker
-          docker compose up -d
+          set -euo pipefail
+          BRANCH_TAG="$(echo "${GITHUB_REF_NAME}" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9._-]/-/g')"
+          SHORT_SHA="${GITHUB_SHA::12}"
+          echo "branch_tag=${BRANCH_TAG}" >> "${GITHUB_OUTPUT}"
+          echo "sha_tag=sha-${SHORT_SHA}" >> "${GITHUB_OUTPUT}"
+          echo "image_ref=${REGISTRY}/${IMAGE_NAME}" >> "${GITHUB_OUTPUT}"
+
+      - name: Log in to private registry
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "${{ secrets.REGISTRY_AUTH_PASSWORD }}" | docker login "${{ env.REGISTRY }}" \
+            --username "${{ vars.REGISTRY_AUTH_USERNAME }}" \
+            --password-stdin
+
+      - name: Build image
+        shell: bash
+        run: |
+          set -euo pipefail
+          IMAGE_REF="${{ steps.image_vars.outputs.image_ref }}"
+          docker build \
+            --tag "${IMAGE_REF}:${{ steps.image_vars.outputs.sha_tag }}" \
+            --tag "${IMAGE_REF}:${{ steps.image_vars.outputs.branch_tag }}" \
+            .
+
+      - name: Push image tags
+        shell: bash
+        run: |
+          set -euo pipefail
+          IMAGE_REF="${{ steps.image_vars.outputs.image_ref }}"
+          docker push "${IMAGE_REF}:${{ steps.image_vars.outputs.sha_tag }}"
+          docker push "${IMAGE_REF}:${{ steps.image_vars.outputs.branch_tag }}"
+
+      - name: Push latest tag for default branch
+        if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+        shell: bash
+        run: |
+          set -euo pipefail
+          IMAGE_REF="${{ steps.image_vars.outputs.image_ref }}"
+          docker tag "${IMAGE_REF}:${{ steps.image_vars.outputs.sha_tag }}" "${IMAGE_REF}:latest"
+          docker push "${IMAGE_REF}:latest"

@@ -1,0 +1,5 @@
+.git
+.github
+docker
+web/node_modules
+web/.next
