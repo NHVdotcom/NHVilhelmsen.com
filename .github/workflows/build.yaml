@@ -11,7 +11,7 @@ env:
 
 jobs:
   publish-image:
-    runs-on: dmz-bobby
+    runs-on: self-hosted
     permissions:
       contents: read
     steps:
